@@ -66,7 +66,7 @@ var db_host = (process.env.mongodb_host || "ds147125.mlab.com" ) ;
 var db_port = (process.env.mongodb_port || "47125" ) ;
 var db_user = (process.env.mongodb_user || "cmpe281" ) ;
 var db_pwd  = (process.env.mongodb_pwd  || "cmpe281" ) ;
-var db_name = (process.env.mongodb_name || "test" ) ;
+var db_name = (process.env.mongodb_name || "test1" ) ;
    
 
 var db = new DB(db_name,
@@ -257,7 +257,7 @@ var handle_get = function (req, res, next) {
 }
 
 
-/*  Handlebars Test using Home template 
+/*  Handlebars using Home template 
 
 app.get('/', function (req, res, next) {
     res.render('home', {
@@ -316,8 +316,7 @@ Port:   27017
 
 See:  https://docs.mongodb.com/manual/reference/method/db.createUser/
 
- use test
- db.createUser(
+ use db.createUser(
     {
       user: "cmpe281",
       pwd: "cmpe281",
